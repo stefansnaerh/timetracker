@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
+$mainFont: 'Rubik';
+$nameFontSize: 24px;
+$hoursFontSize: 32px;
+$activityFontSize: 18px;
+$greyFontSize: 15px;
+
+$beigeFontColor: #BBC0FF;
+$whiteFontColor: #FFFFFF;
+
+$maxWidth: 22rem;
+$widthDesktop: 13rem;
+$cardHeightDesktop: 12rem;
+
+$regularFontWeight: 400;
+$lightFontWeight: 300;
+$boldFontWight: 400;
+
+$lightBlue: #5747EA;
+$darkBlue: #1C204B;
+$darkestBlue: #0E1323;
+
+
+
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  grid-template-rows: 5% 10.5rem 10rem 10rem 10rem 10rem 10rem 10rem 5%;
+  grid-template-columns: 100%;
+  row-gap: 1rem;
+  justify-items: center;
+}
+
+//-------------- css for User Card --------------
+
+.user-card {
+  grid-row-start: 2;
+  background-color: $darkBlue;
+  height: 10.5rem;
+  max-width: $maxWidth;
+  border-radius: 15px;
+}
+.profile-container {
+  background-color: $lightBlue;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+.person-image {
+  height: 60px;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.name-sub {
+  font-family: $mainFont;
+  color: $beigeFontColor;
+  font-weight: $regularFontWeight;
+  font-size: $greyFontSize;
+}
+.name {
+  font-family: $mainFont;
+  color: $whiteFontColor;
+  font-weight: $lightFontWeight;
+  font-size: $nameFontSize;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-content: center;
+  padding-top: 1.3rem;
+}
+
+button {
+  background: none;
+  border: none;
+  color: $beigeFontColor;
+  font-family: $mainFont;
+  font-size: $activityFontSize;
+  font-weight: $regularFontWeight;
+  cursor: pointer;
+}
+
+button:hover {
+  color: $whiteFontColor;
+}
+button:focus {
+  color: $whiteFontColor;
+}
+
+
+
+
+// ---------- CSS for activity card ------------
+
+.work-card0 {
+  grid-row-start: 3;
+  background-color: #FF8B64;
+  height: 10rem;
+  max-width: $maxWidth;
+  border-radius: 15px;
+  position: relative;
+  width: 267px;
+}
+.work-card1 {
+  grid-row-start: 4;
+  background-color: #55C2E6;
+  height: 10rem;
+  max-width: $maxWidth;
+  border-radius: 15px;
+  position: relative;
+  width: 267px;
+}
+.work-card2 {
+  grid-row-start: 5;
+  background-color: #FF5E7D;
+  height: 10rem;
+  max-width: $maxWidth;
+  border-radius: 15px;
+  position: relative;
+  width: 267px;
+}
+.work-card3 {
+  grid-row-start: 6;
+  background-color: #4BCF82;
+  height: 10rem;
+  max-width: $maxWidth;
+  border-radius: 15px;
+  position: relative;
+  width: 267px;
+}
+.work-card4 {
+  grid-row-start: 7;
+  background-color: #7335D2;
+  height: 10rem;
+  max-width: $maxWidth;
+  border-radius: 15px;
+  position: relative;
+  width: 267px;
+}
+.work-card5 {
+  grid-row-start: 8;
+  background-color: #F1C75B;
+  height: 10rem;
+  max-width: $maxWidth;
+  border-radius: 15px;
+  position: relative;
+  width: 267px;
+}
+.activity-image {
+  align-self: flex-end;
+}
+.blue-container {
+  height: 7.5rem;
+  background-color: $darkBlue;
+  border-radius: 15px;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+  max-width: $maxWidth;
+  cursor: pointer;
+}
+.blue-container:hover {
+  background-color: #33397A;
+}
+.activity-text {
+  grid-column: 1 / 1;
+  grid-row: 1/ 1;
+  font-size: $activityFontSize;
+  font-family: $mainFont;
+  color: $whiteFontColor;
+  font-weight: $regularFontWeight;
+  padding-left: 1rem;
+}
+.hours-text {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2 ;
+  margin-top: 0;
+  font-family: $mainFont;
+  font-size: $hoursFontSize;
+  color: $whiteFontColor;
+  font-weight: $lightFontWeight;
+  padding-left: 1rem;
+}
+.last-week-text {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+  font-family: $mainFont;
+  font-size: $greyFontSize;
+  color: $beigeFontColor;
+  font-weight: $regularFontWeight;
+  padding-right: 1rem;
+}
+
+.dots-week-container {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  text-align: end;
+  justify-self: flex-end;
+  align-self: center;
+  padding-right: 1rem;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .App {
+    grid-template-columns: 1fr $widthDesktop $widthDesktop $widthDesktop $widthDesktop 1fr;
+    grid-template-rows: 1fr $cardHeightDesktop $cardHeightDesktop 1fr;
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+  .user-card {
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+    background-color: $darkBlue;
+    height: 24.7rem;
+    width: $widthDesktop;
+    border-radius: 15px;
+  }
+  .profile-container {
+    background-color: $lightBlue;
+    height: 16rem;
+    padding-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+    gap: 0.5rem;
+  }
+  
+
+.work-card0 {
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
+  background-color: #FF8B64;
+  height: $cardHeightDesktop;
+  border-radius: 15px;
+  position: relative;
+  width: 200px;
+}
+.work-card1 {
+  grid-column: 4 / 4;
+  grid-row: 2 / 2;
+  background-color: #55C2E6;
+  height: $cardHeightDesktop;
+  width: $widthDesktop;
+}
+.work-card2 {
+  grid-column: 5 / 5;
+  grid-row: 2 / 2;
+  background-color: #FF5E7D;
+  height: $cardHeightDesktop;
+  max-width: $maxWidth;
+  border-radius: 15px;
+  position: relative;
+  width: $widthDesktop;
+}
+.work-card3 {
+  grid-column: 3 / 3;
+  grid-row: 3 / 3;
+  background-color: #4BCF82;
+  height: $cardHeightDesktop;
+  border-radius: 15px;
+  position: relative;
+  width: $widthDesktop;
+}
+.work-card4 {
+  grid-column: 4 / 4;
+  grid-row: 3 / 3;
+  background-color: #7335D2;
+  height: $cardHeightDesktop;
+  max-width: $maxWidth;
+  border-radius: 15px;
+  position: relative;
+  width: $widthDesktop;
+}
+.work-card5 {
+  grid-column: 5 / 5;
+  grid-row: 3 / 3;
+  background-color: #F1C75B;
+  height: $cardHeightDesktop;
+  max-width: $maxWidth;
+  border-radius: 15px;
+  position: relative;
+  width: $widthDesktop;
+}
+.blue-container {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
+  height: 9.5rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  max-width: $maxWidth;
+  cursor: pointer;
+}
+.activity-text {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+.dots-week-container {
+  grid-column: 2 / 2;
+  grid-row: 1/ 1;
+}
+.last-week-text {
+  grid-column: 1 / 3;
+  grid-row: 3 / 3 ;
+  margin: 0;
+  padding-left: 1rem;
+}
+.hours-text {
+  grid-column: 1 / 1;
+  grid-row: 2/2;
+  margin: 0;
+}
+
+}
+
+
+
