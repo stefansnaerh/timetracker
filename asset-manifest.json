@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/timetracker/static/css/main.71aeac55.css",
+    "main.js": "/timetracker/static/js/main.5dc93013.js",
+    "static/media/image-jeremy.png": "/timetracker/static/media/image-jeremy.71cd41f11bee24c1ded3.png",
+    "index.html": "/timetracker/index.html",
+    "static/media/icon-ellipsis.svg": "/timetracker/static/media/icon-ellipsis.a57a4ac863593bb69d31b4399823f745.svg",
+    "main.71aeac55.css.map": "/timetracker/static/css/main.71aeac55.css.map",
+    "main.5dc93013.js.map": "/timetracker/static/js/main.5dc93013.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71aeac55.css",
+    "static/js/main.5dc93013.js"
+  ]
+}
