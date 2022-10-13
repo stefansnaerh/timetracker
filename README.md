@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-!(./images/timetrackerScreenshot.png)
+(../public/images/timetrackerScreenshot.png)
 
 ### Links
 
